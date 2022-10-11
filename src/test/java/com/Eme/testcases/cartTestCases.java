@@ -16,7 +16,7 @@ public class cartTestCases extends BrowserManagement {
 		cartoperate = new cartOperations(driver);
 	}
 
-	@Test(priority = 0, description = "Empty cart test", enabled = false)
+	@Test(priority = 0, description = "Blank cart test", enabled = false)
 	public void emptyCartTest() {
 		String emptycartval = cartoperate.emptyCart();
 		Assert.assertEquals(emptycartval, DataSlayer.getData(2, 0, 1));

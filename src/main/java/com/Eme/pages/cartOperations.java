@@ -81,6 +81,7 @@ public class cartOperations extends commonServices {
 		return textlist;
 	}
 
+	//progress bar
 	public String cartProgressStep() {
 		clickElement(carticon);
 		helper.waitToLoad(3000);

@@ -1,4 +1,5 @@
 package com.Eme.pages;
+
 import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -11,15 +12,14 @@ import com.Eme.helper.helper;
 
 public class HomePage extends BrowserManagement {
 
-	LoginPage loginPage= new LoginPage(driver);
-	
+	LoginPage loginPage = new LoginPage(driver);
+
 	public HomePage() {
 		PageFactory.initElements(driver, this);
 	}
 
 	@FindBy(xpath = "//div[@class=\"logo\"]/child::a")
-	static
-	WebElement logo;
+	static WebElement logo;
 
 	@FindBy(xpath = "//a[@href=\"/help/\"]")
 	static WebElement helplink;
@@ -63,7 +63,7 @@ public class HomePage extends BrowserManagement {
 	@FindBy(xpath = "//div[@class=\"buttons grid-btn\"]/child::button[@value=\"Buy Frame Only\"]")
 	WebElement addframeonlycta;
 
-	@FindBy(xpath = "//button[@id='S23C3688_0']")
+	@FindBy(xpath = "//button[@id='S12A2001_0']")
 	WebElement BuyNowCta;
 
 	@FindBy(xpath = "//button[@id=\"btn-proceed-checkout\"]")
@@ -153,7 +153,8 @@ public class HomePage extends BrowserManagement {
 				e1.printStackTrace();
 			}
 			helper.waitfornextAction(driver, 5000);
-			List<WebElement> elementlist = driver.findElements(By.xpath("//div[@class=\"owl-item active\"]/descendant::a/child::img"));
+			List<WebElement> elementlist = driver
+					.findElements(By.xpath("//div[@class=\"owl-item active\"]/descendant::a/child::img"));
 			for (WebElement element : elementlist) {
 				helper.waitfornextAction(driver, 3000);
 				try {
@@ -186,6 +187,15 @@ public class HomePage extends BrowserManagement {
 			helper.waitForClick(driver, proceedbtnElement, 3000);
 			helper.waitfornextAction(driver, 3000);
 			loginPage.loginByPass("shailendra.k@eyemyeye.com", "test@123");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void addToCart() {
+		try {
+			addProdTocart(sunglassmenu, menuElement);
+			helper.waitForClick(driver, BuyNowCta, 3000);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

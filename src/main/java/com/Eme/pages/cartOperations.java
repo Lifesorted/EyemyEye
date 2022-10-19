@@ -13,6 +13,7 @@ import com.Eme.helper.helper;
 public class cartOperations extends commonServices {
 
 	commonServices services;
+	HomePage homePage;
 
 	public cartOperations(WebDriver driver) {
 		PageFactory.initElements(driver, this);
@@ -39,6 +40,12 @@ public class cartOperations extends commonServices {
 
 	@FindBy(xpath = "//div[@class=\"container-fluid px-10\"]/child::a")
 	WebElement emptylogo;
+	
+	@FindBy(xpath = "//input[@data-field=\"quantity\"][1]")
+	WebElement plusicon;
+	
+	@FindBy(xpath = "//div[@class=\"toast-message\"]")
+	WebElement toastmsg;
 
 	public String emptyCart() {
 		clickElement(carticon);
@@ -107,5 +114,15 @@ public class cartOperations extends commonServices {
 		clickElement(carticon);
 		helper.waitToLoad(3000);
 		return isElementPresent(emptylogo);
+	}
+	
+	public String increaseQuantity() {
+		homePage.addEyeGlass();
+		if (plusicon.isDisplayed()) {
+			plusicon.click();
+		} else {
+             System.out.println("Icon not present or not clickable");
+		}
+		return toastmsg.getText();
 	}
 }

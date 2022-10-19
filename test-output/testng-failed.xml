@@ -6,9 +6,9 @@
       <class name="com.Eme.testcases.cartTestCases">
         <methods>
           <include name="closeBrowser"/>
-          <include name="isLogoExist"/>
           <include name="initializewebElement"/>
           <include name="launchBrowser"/>
+          <include name="increaseQuantityTest"/>
         </methods>
       </class> <!-- com.Eme.testcases.cartTestCases -->
     </classes>

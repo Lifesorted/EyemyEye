@@ -34,12 +34,6 @@ public class helper extends BrowserManagement {
 		new WebDriverWait(driver, timeout);
 	}
 
-	@SuppressWarnings("deprecation")
-	public static void waitForClick(WebDriver driver, WebElement webelement, int timeout) {
-		new WebDriverWait(driver, timeout).until(ExpectedConditions.visibilityOf(webelement));
-		webelement.click();
-	}
-
 	public static boolean checkInternet() {
 		try {
 			URL url = new URL(System.getProperty("url"));
@@ -92,39 +86,12 @@ public class helper extends BrowserManagement {
 		Date currentDate = new Date();
 		return customformat.format(currentDate);
 	}
-<<<<<<< HEAD
-
-=======
 	
 	public static void waitForClick(WebDriver driver,WebElement element , int timeout) {
 		new WebDriverWait(driver, timeout).until(ExpectedConditions.visibilityOf(element));
 		element.click();
 	}
-	
-	//Internet check
-	public static boolean checkInternet() {
-		 try {
-	         URL url = new URL(System.getProperty("url"));
-	         URLConnection connection = url.openConnection();
-	         connection.connect();
-	         System.out.println("Internet is connected");
-	      } catch (MalformedURLException e) {
-	         System.out.println("Internet is not connected");
-	      } catch (IOException e) {
-	         System.out.println("Internet is not connected");
-	      }
-		return true;
-	}
-	
-	public static String generateRandomVal() {
-		int min = 200;  
-		int max = 400; 
-		int val = (int)(Math.random()*(max-min+1)+min);
-		String dataval="test"+val;
-		return dataval;	
-	}
-	
->>>>>>> 3bcb582619c88d28d9c91b270e2b32e784c3c475
+
 	/*
 	 * public static void main(String args[]) {
 	 * System.out.println(helper.getCurrentDate()); }

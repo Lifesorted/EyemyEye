@@ -133,6 +133,7 @@ public class cartOperations extends commonServices {
 		return toastmsg.getText();
 	}
 	
+	//decrease quantity from cart item
 	public String decreaseQuantity() {
 		HomePage homePagedata = new HomePage();
 		homePagedata.addToCart();

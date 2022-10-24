@@ -60,9 +60,15 @@ public class cartTestCases extends BrowserManagement {
 		Assert.assertTrue(cartoperate.isLogoExist());
 	}
 	
-	@Test(priority = 0, description = "Increase quantity test", enabled = true)
+	@Test(priority = 0, description = "Increase quantity test", enabled = false)
 	public void increaseQuantityTest() {
 		String msgtoast= cartoperate.increaseQuantity();
+		System.out.println(msgtoast);
+	}
+	
+    @Test(priority = 0, description = "Decrease quantity test", enabled = true)
+	public void decreaseQuantityTest() {
+		String msgtoast= cartoperate.decreaseQuantity();
 		System.out.println(msgtoast);
 	}
 }

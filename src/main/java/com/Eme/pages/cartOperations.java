@@ -43,6 +43,12 @@ public class cartOperations extends commonServices {
 
 	@FindBy(xpath = "//input[@data-field=\"quantity\"][2]")
 	WebElement plusicon;
+	
+	@FindBy(xpath = "//input[@data-field=\"quantity\"][1]")
+	WebElement minusicon;
+	
+	@FindBy(xpath = "//button[@id=\"btn-delete\"][1]")
+	WebElement deletecartbtn;
 
 	@FindBy(xpath = "//div[@class=\"toast-message\"]")
 	WebElement toastmsg;
@@ -121,6 +127,18 @@ public class cartOperations extends commonServices {
 		homePagedata.addToCart();
 		if (plusicon.isDisplayed()) {
 			plusicon.click();
+		} else {
+			System.out.println("Icon not present or not clickable");
+		}
+		return toastmsg.getText();
+	}
+	
+	public String decreaseQuantity() {
+		HomePage homePagedata = new HomePage();
+		homePagedata.addToCart();
+		if (minusicon.isDisplayed()) {
+			minusicon.click();
+			deletecartbtn.click();
 		} else {
 			System.out.println("Icon not present or not clickable");
 		}

@@ -7,8 +7,8 @@
         <methods>
           <include name="closeBrowser"/>
           <include name="initializewebElement"/>
+          <include name="decreaseQuantityTest"/>
           <include name="launchBrowser"/>
-          <include name="increaseQuantityTest"/>
         </methods>
       </class> <!-- com.Eme.testcases.cartTestCases -->
     </classes>

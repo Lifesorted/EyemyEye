@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="6" total="7" passed="1" failed="0" skipped="0">
+<testng-results ignored="7" total="8" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-19T08:29:08 IST" name="Suite" finished-at="2022-10-19T08:29:29 IST" duration-ms="20696">
+  <suite started-at="2022-10-24T15:02:20 IST" name="Suite" finished-at="2022-10-24T15:02:33 IST" duration-ms="12297">
     <groups>
     </groups>
-    <test started-at="2022-10-19T08:29:08 IST" name="Test" finished-at="2022-10-19T08:29:29 IST" duration-ms="20696">
+    <test started-at="2022-10-24T15:02:20 IST" name="Test" finished-at="2022-10-24T15:02:33 IST" duration-ms="12297">
       <class name="com.Eme.testcases.cartTestCases">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.Eme.testcases.cartTestCases@5d534f5d]" started-at="2022-10-19T08:29:08 IST" name="launchBrowser" finished-at="2022-10-19T08:29:17 IST" duration-ms="9080" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.Eme.testcases.cartTestCases@6fdbe764]" started-at="2022-10-24T15:02:20 IST" name="launchBrowser" finished-at="2022-10-24T15:02:27 IST" duration-ms="6960" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="initializewebElement()[pri:0, instance:com.Eme.testcases.cartTestCases@5d534f5d]" started-at="2022-10-19T08:29:17 IST" name="initializewebElement" finished-at="2022-10-19T08:29:17 IST" duration-ms="69" status="PASS">
+        <test-method is-config="true" signature="initializewebElement()[pri:0, instance:com.Eme.testcases.cartTestCases@6fdbe764]" started-at="2022-10-24T15:02:27 IST" name="initializewebElement" finished-at="2022-10-24T15:02:27 IST" duration-ms="21" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializewebElement -->
-        <test-method signature="increaseQuantityTest()[pri:0, instance:com.Eme.testcases.cartTestCases@5d534f5d]" started-at="2022-10-19T08:29:17 IST" name="increaseQuantityTest" description="Increase quantity test" finished-at="2022-10-19T08:29:28 IST" duration-ms="10332" status="PASS">
+        <test-method signature="decreaseQuantityTest()[pri:0, instance:com.Eme.testcases.cartTestCases@6fdbe764]" started-at="2022-10-24T15:02:27 IST" name="decreaseQuantityTest" description="Decrease quantity test" finished-at="2022-10-24T15:02:32 IST" duration-ms="5076" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- increaseQuantityTest -->
-        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:com.Eme.testcases.cartTestCases@5d534f5d]" started-at="2022-10-19T08:29:28 IST" name="closeBrowser" finished-at="2022-10-19T08:29:29 IST" duration-ms="1157" status="PASS">
+        </test-method> <!-- decreaseQuantityTest -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:com.Eme.testcases.cartTestCases@6fdbe764]" started-at="2022-10-24T15:02:32 IST" name="closeBrowser" finished-at="2022-10-24T15:02:33 IST" duration-ms="215" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=increaseQuantityTest status=SUCCESS method=cartTestCases.increaseQuantityTest()[pri:0, instance:com.Eme.testcases.cartTestCases@5d534f5d] output={null}]]]>
+                <![CDATA[[TestResult name=decreaseQuantityTest status=SUCCESS method=cartTestCases.decreaseQuantityTest()[pri:0, instance:com.Eme.testcases.cartTestCases@6fdbe764] output={null}]]]>
               </value>
             </param>
           </params>

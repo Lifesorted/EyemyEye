@@ -66,7 +66,7 @@ public class cartTestCases extends BrowserManagement {
 		System.out.println(msgtoast);
 	}
 	
-    @Test(priority = 0, description = "Decrease quantity test", enabled = true)
+    @Test(priority = 0, description = "Decrease quantity test of cart", enabled = true)
 	public void decreaseQuantityTest() {
 		String msgtoast= cartoperate.decreaseQuantity();
 		System.out.println(msgtoast);
